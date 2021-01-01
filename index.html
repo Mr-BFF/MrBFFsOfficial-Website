@@ -3,12 +3,17 @@
 <meta property="og:image" content="assets/icon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/e3683c15ce.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/bar.css">
+<link type="text/css" rel="stylesheet" href="css/bar.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="The Home Landing Page of Mr B.F.F! Check out my website!">
-  <meta name="keywords" content="gaming, blog, mods, websites.">
-  <meta name="author" content="Mr B.F.F">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <body>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <style>
 body {
@@ -17,6 +22,15 @@ body {
 .row {
   display: flex;
   width: 100%;
+}
+
+.rowtwo div {
+  width: 100%;
+  height: 400;
+}
+
+.notwoMargin {
+  margin: 0px;
 }
 
 .row div {
@@ -99,22 +113,25 @@ color: rgb(0, 0, 0);
 		<p><h1><marquee behavior="scroll" direction="down">Welcome! SCROLL DOWN for Mr B.F.F's website!</h1> <i class="fas fa-arrow-down"></i></p></marquee>
 </div>
 
-
-<div class="topnav"> 
-  </p><h1>Mr B.F.F</h1></p>
-  <a class="active" href="/"><i class="fa fa-home"></i> Home</a>
-  <a href="https://discord.gg/bjRf8Sj"><i class="fab fa-discord"></i></i> Discord</a>
-  <a href="smm2"><i class="fa fa-hammer"></i> SMM2</a>
-  <a href="gamemods"><i class="fa fa-cogs"></i> Game Mods</a>
-  <a href="3dsthemes"><i class="fas fa-folder-open"></i> 3DS Themes</a>
-  <a href="gallery"><i class="fa fa-photo-video"></i> Gallery</a>
-  <a href="instagram"><i class="fa fa-instagram"></i> Instagram</a>
-  <a href="playroom"><i class="fa fa-gamepad"></i> Playroom</a>
-  <a href="https://kit.co/Mr_BFF"><i class="fas fa-tools"></i> My Tools</a>
-  <a href="about"><i class="fa fa-info-circle"></i> About</a>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Mr B.F.F</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <li><a class="active" href="/"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="https://discord.gg/bjRf8Sj"><i class="fab fa-discord"></i></i> Discord</a></li>
+    <li><a href="smm2"><i class="fa fa-hammer"></i> SMM2</a></li>
+    <li><a href="gamemods"><i class="fa fa-cogs"></i> Game Mods</a></li>
+    <li><a href="gallery"><i class="fa fa-photo-video"></i> Gallery</a></li>
+    <li><a href="instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
+    <li><a href="playroom"><i class="fa fa-gamepad"></i> Playroom</a></li>
+    <li><a href="about"><i class="fa fa-info-circle"></i> About</a></li>
+    </ul>
 </div>
+</nav>
+
 </style>
 <style>
+}
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -158,20 +175,20 @@ color: rgb(0, 0, 0);
 </div>
 <pre>  
 <h1>
-  <marquee behavior="scroll" direction="left" scrollamount="15" >Welcome to Mr B.F.F's Gaming Website! ------------------------------------------------- Mr B.F.F - Content Creator, Gamer and Programmer.</marquee>
+  <marquee behavior="scroll" direction="left" scrollamount="15" >Welcome to Mr B.F.F's Gaming Wiki! ------------------------------------------------- Mr B.F.F - Content Creator, Gamer and Programmer.</marquee>
 </h1>
 
 <div class="w3-bar w3-black">
-
-<h1>
+<h5>
 <pre>
+<p style="text-align:center;">
 Hi everyone! My name is Mr B.F.F known as Old AJ. <img src="images/LGL.png" alt="LGL.png" class="image" width="250" height="250"></a>
 I game, work and program.
 I reached 1.4K subs on YouTube and around 800
 followers on Instagram as well as 100 members on my 
 Discord server.
 
-With the lead of social media, I have made friends and started
+With the lead of social media I have made friends and started
 growing as much as I can with videos and text. 
 My videos are dedicated to mainly video games in which
 other people like and support. Everytime I look at something
@@ -182,37 +199,38 @@ on how to grow and how to use common sense in a wide range of subjects.
 List of game that I record.
 <div class="row noMargin">
   <div class="one">
-    Wii Sports Series
+    <p style="text-align:center;"> Wii Sports Series</p>
   </div>
   <div class="two">
-    Wii Play
+    <p style="text-align:center;"> Wii Play</p>
   </div>
 </div>
 <div class="row noMargin">
   <div class="three">
-    DKR (N64)
+    <p style="text-align:center;"> DKR (N64)</p>
   </div>
   <div class="four">
-    Pilotwings Resort
+    <p style="text-align:center;"> Pilotwings Resort</p>
   </div>
 </div>
 
+<p style="text-align:center;">
 And many more!
-
-These are some stuff I worked on:
 
 <i class="fab fa-discord"></i> DISCORD BOT
 This is my Website dedicated to my Play Room, open Mods and my own material!
 To the Playroom, I use a Discord bot for moderation, with a friend named James,
 he helped us code our way to successfully making the bot go online.
-It's currently released for users to add to their servers. 
+It's currently released for users to add to their servers.
 
 <i class="fas fa-globe"></i> THIS WEBSITE
-With the understanding of coding, I work relentlessly for a few hours with the 
-proper tools and coding languages I need to make this wonderful website, and still going.
-Check <a href="https://twitter.com/mrbffyt">@mrbffyt</a> on Twitter for site status and updates.
+With the understanding of coding, I work relentlessly for a few hours with the proper coding
+languages I need to make this wonderful website, and still going.
+</p>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="rowtwo notwoMargin">
+  <div class="one">
+    <center><p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Outside Content AD -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -222,49 +240,37 @@ Check <a href="https://twitter.com/mrbffyt">@mrbffyt</a> on Twitter for site sta
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script></p></center>
+  </div>
+</div>
+
 
 <script data-ad-client="ca-pub-4290566404247162" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-
-
+<p style="text-align:center;">
 <i class="fab fa-twitter"></i> Twitter <i class="fab fa-discord"></i> Discord
-<a class="twitter-timeline" data-width="350" data-height="500" data-theme="dark" href="https://twitter.com/MrBFF5418?ref_src=twsrc%5Etfw">Tweets by MrBFF5418</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <iframe src="https://discord.com/widget?id=467727041857454081&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-  <h3><span>Featured update:</span></h3>
-  <img src="https://tag.rc24.xyz/382259427127984141/tag.png" alt="tag.png" class="image">
-  <p>Here is my little tag for Wii! Looks detailed.<br>
-  You can see the games I play while this actively changes from time to time.
-  Latest starting from Right to left.</p>
+<a class="twitter-timeline" data-width="350" data-height="500" data-theme="dark" href="https://twitter.com/MrBFF5418?ref_src=twsrc%5Etfw">Tweets by MrBFF5418</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <iframe src="https://discordapp.com/widget?id=467727041857454081&amp;theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+</p>
+
+  <h3><span><p style="text-align:center;">Featured update:</span></h3>
+    <p style="text-align:center;"><img src="https://tag.rc24.xyz/382259427127984141/tag.png" alt="tag.png" class="image">
+    <p style="text-align:center;">Here is my little tag for Wii! Looks detailed. This will probably stay up in this page for a long time.<br>
+  You can see the game I play while this actively changes from time to time.</p>
   </div>
-      
+    
+</p>
 <script data-ad-client="ca-pub-4290566404247162" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>     
-      
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Outside Content AD -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4290566404247162"
-     data-ad-slot="6688279545"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+     
 
 </pre>
-</h1>
+</h5>
 
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
 
 <footer class="page-footer blue">
   <div class="container">
   <div class="row">
   </div>
-<i class="fab fa-discord" aria-hidden="true"></i> <a class="white-text" href="https://discord.gg/bjRf8Sj">Discord</a>
+  <p style="text-align:center;"><i class="fab fa-discord" aria-hidden="true"></i> <a class="white-text" href="https://discord.gg/b4Y7jfD">Discord</a>
 <i class="fab fa-instagram" aria-hidden="true"></i> <a class="white-text" href="https://www.instagram.com/mr_b.f.f">Instagram</a>
 <i class="fab fa-twitter" aria-hidden="true"></i> <a class="white-text" href="https://twitter.com/MrBFF5148">Twitter</a>
 <i class="fab fa-youtube" aria-hidden="true"></i> <a class="white-text" href="https://www.youtube.com/mrbff">YouTube</a>
@@ -274,7 +280,8 @@ div {text-align: center;}
   </div>
   <div class="footer-copyright">
   <div class="container">
-  © 2020 Mr B.F.F - ALL RIGHTS RESERVED
+    <p style="text-align:center;"> © 2020 Mr B.F.F - ALL RIGHTS RESERVED </p>
 <pre>
 </pre>
 </div>
+
