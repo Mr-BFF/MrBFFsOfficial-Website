@@ -1,0 +1,11 @@
+.parent ::-webkit-selection, [contenteditable]::-webkit-selection {
+	background: #ff0000;
+}
+
+.parent ::-moz-selection, [contenteditable]::-moz-selection {
+	background: #ff0000;
+}
+
+.parent ::selection, [contenteditable]::selection {
+	background: #ff0000;
+}
