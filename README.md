@@ -4,4 +4,7 @@ Go check it out!
 
 https://www.mrbffyt.com/
 
-You may fork this with my permission ONLY!
+Follow @mrbffyt on Twitter where I log site status.
+Some Website components follow the MIT License.
+Do not redistribute the website and make it your own.
+
