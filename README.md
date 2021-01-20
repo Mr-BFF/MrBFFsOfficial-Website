@@ -4,7 +4,7 @@ Go check it out!
 
 https://www.mrbffyt.com/
 
-Follow @mrbffyt on Twitter where I log site status.
+Follow [@mrbffyt](https://twitter.com/mrbffyt) on Twitter where I log site status.
 
 Some Website components follow the MIT License.
 
