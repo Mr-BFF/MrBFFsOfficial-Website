@@ -1,12 +1,10 @@
 <title>Mr B.F.F - 404 error</title>
-<link rel="icon" href="assets/icon.ico" type="image/x-icon" />
+<link rel="icon" href="icon.ico" type="image/x-icon" />
 <meta property="og:image" content="assets/icon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/56969fbf0a.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/navigation.css">
 <link rel="stylesheet" href="css/highlight.css">
-<link rel="stylesheet" href="https://github.com/Mr-BFF/MrBFFsOfficial-Website/blob/main/css/highlight.css">
-<link rel="stylesheet" href="https://github.com/Mr-BFF/MrBFFsOfficial-Website/blob/main/css/navigation.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED5F04XYL7"></script>
 <script>
@@ -20,6 +18,67 @@
 body {
   background-image: url('https://github.com/Mr-BFF/MrBFFsOfficial-Website/blob/main/images/grey.jpg?raw=true');
 }
+.parent ::-webkit-selection, [contenteditable]::-webkit-selection {
+	background: #ff0000;
+}
+
+.parent ::-moz-selection, [contenteditable]::-moz-selection {
+	background: #ff0000;
+}
+
+.parent ::selection, [contenteditable]::selection {
+	background: #ff0000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #000000;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 .header { 
 padding: 400px; 
 text-align: center; 
