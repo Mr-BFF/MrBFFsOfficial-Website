@@ -13,11 +13,37 @@
   <meta name="keywords" content="gaming, blog, mods, websites.">
   <meta name="author" content="Mr B.F.F">
 </head>
-<script type="text/javascript">
-    if ( !document.getElementById('test-block') ) {
-        document.getElementById('banner-12345').style.display='block';
-    }
-</script>
+<script src="./adblockDetector.js"></script>
+	<script>
+	(function(){
+		var enabledEl = document.getElementById('adb-enabled');
+		var disabledEl = document.getElementById('adb-not-enabled');
+		function adBlockDetected() {
+			enabledEl.style.display = 'block';
+			disabledEl.style.display = 'none';
+		}
+		function adBlockNotDetected() {
+			disabledEl.style.display = 'block';
+			enabledEl.style.display = 'none';
+		}
+		
+		if(typeof window.adblockDetector === 'undefined') {
+			adBlockDetected();
+		} else {
+			window.adblockDetector.init(
+				{
+					debug: true,
+					found: function(){
+						adBlockDetected();
+					},
+					notFound: function(){
+						adBlockNotDetected();
+					}
+				}
+			);
+		}
+	}());
+	</script>
 <!--  site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED5F04XYL7"></script>
 <script>
@@ -236,22 +262,10 @@ color: rgb(0, 0, 0);
 
 <div class="w3-bar w3-black">
 
-<div id="banner-12345">
-    Are you using adblocker? Some pages might have blank textboxes.<br>
-    Please consider supporting us by disabling your ad blocker on our website.
+<div class="center">
+<h5 class="bg-success" id="adb-not-enabled" style="display: none;">AdBlock is disabled</h5>
+<h5 class="bg-danger" id="adb-enabled" style="display: none;">AdBlock is enabled</h5>
 </div>
-<style>
-    #banner-12345 {
-        display: none;
-        margin-bottom: 30px;
-        padding: 20px 10px;
-        border-radius: 5px;
-        background: #D30000;
-        color: #fff;
-        text-align: center;
-        font-weight: bold;
-    }
-</style>
 
 <h1>
 <pre>
